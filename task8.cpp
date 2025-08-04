@@ -2,10 +2,10 @@
 #include <string>
 
 template<typename T>
-auto findMax(T a, T b) { return a > b ? a : b; } 
+auto findMax(const T& a, const T& b) { return a > b ? a : b; } 
 
 template<typename T>
-auto findMin(T a, T b) { return a < b ? a : b; };
+auto findMin(const T& a, const T& b) { return a < b ? a : b; };
 int main() {
     std::cout << findMax(3, 4) << std::endl;
     std::cout << findMax("asdf1", "asdf2") << std::endl;
